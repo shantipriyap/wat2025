@@ -196,7 +196,7 @@ training_args = Seq2SeqTrainingArguments(
     load_best_model_at_end=True,
     metric_for_best_model="sacrebleu",
     greater_is_better=True,
-    generation_max_length=128,
+    generation_max_length=512,
     fp16=True
 )
 
