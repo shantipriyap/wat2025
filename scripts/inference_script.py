@@ -28,7 +28,7 @@ source_text = "This is a simple sentence to translate."
 model_inputs = tokenizer(source_text, return_tensors="pt", padding=True, truncation=True).to(device)
 generated_tokens = model.generate(
       **model_inputs,
-      forced_bos_token_id=tokenizer.convert_tokens_to_ids("hin_Deva")
+      forced_bos_token_id=tokenizer.convert_tokens_to_ids(LANG_CODES.get(language.lower(), "hin_Deva"))
   )
 target_text = tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)[0]
 print(f"Source Text: {source_text}\nTranslated Text ({language}): {target_text}")
