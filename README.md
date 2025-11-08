@@ -56,3 +56,10 @@ This reponsitory contains the data source, fine-tuning scripts and eval results 
 | **English → Odia** |||||
 | MMEVTEXT21en-od | 62.90 | **64.30** | 0.903 | **0.906** |
 | MMCHTEXT21en-od | **56.40** | 55.40 | 0.916 | **0.916** |
+
+## Contributors
+- Debasish Dhal
+- Sambit Sekhar
+- Revathy V. R.
+- Akash Kumar Dhaka
+- Shantipriya Parida
